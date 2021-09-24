@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html, body {
+  background: linear-gradient(45deg, #1F2833, #1E4046);
+  font-family: 'Roboto', sans-serif;
+}
+div :hover {
+background: linear-gradient(65deg, #9A705C , #21474D);}
+
+input:hover {
+background: linear-gradient(65deg, #9A705C , #21474D);
+}
+button:hover {
+background: linear-gradient(65deg, #9A705C , #21474D);}
+.wrapper {
+  width: 300px;
+  color: #1a1f40;
+  margin: 2% 30% 2%;
+}
+.header {
+position: absolute;
+top: 10px;
+  left: 37px;
+font-size: 25px;
+font-weight:bold;
+  color: #FDDCCB;
+}
+span{
+color: E72152;
+}
+
+.text{
+margin: 8% 0% -1%;
+font-size: 20px;
+  color: #C5C6C7;
+ }
+
+
+select{
+text-align: center;
+border-radius: 12px;
+color: #C5C6C7;
+width: 300px;
+margin: 8% 0% 1%;
+font-size: 1em;
+background-color: 183238;
+    border: 1px solid #C5C6C7;
+}
+.pagination{
+  font-size: 1.2em;
+  margin: 8% 0% -10%;
+}
+table {
+margin: 0% 0% -1%;
+	width: 160%;
+	height: 30%;
+	margin-bottom: 25px;
+	border: 1px solid #C5C6C7;
+	border-radius: 12px;
+}
+table th {
+text-align: center;
+border-radius: 1px;
+color: #C5C6C7;
+	padding: 4px 1px;
+	 border-bottom: 1px solid #C5C6C7;
+}
+table td {
+text-align: center;
+border-radius: 12px;
+color: #C5C6C7;
+	border: 1px  #C5C6C7;
+	padding: 8px 15px;
+	white-space: nowrap;
+
+}
+
+.button {
+color: C5C6C7;
+margin-right: 5px;
+  float: left;
+background-color: #1F2833;
+    border: 1px solid #C5C6C7;
+  padding: 7px 15px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+
+#search-text{
+color-text: #1F2833;
+   background: linear-gradient(80deg, #0C1833, #124D3C);
+   }
+
+input {
+color: C5C6C7;
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0px -5px;
+  background-color: #1F2833;
+      border: 1px solid #C5C6C7;
+    padding: 9px 20px;
+    font-size: 1em;
+}
+
+
+input[type="text"]:focus{
+  text-align: left;
+  border: 1px solid white;
+  box-shadow: none;
+}
+
+input[type="text"] {
+
+  background: transparent;
+  border: 1px solid #C5C6C7;
+  padding-left: 10px;
+  }
+.but{
+color: C5C6C7;
+margin-right: 5px;
+  float: left;
+  background-color: #1F2833;
+    border: 1px solid #C5C6C7;
+  padding: 7px 15px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+A {
+color: #C5C6C7;
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   }
+

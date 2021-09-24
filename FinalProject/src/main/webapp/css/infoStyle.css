@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html, body {
+  background: linear-gradient(45deg, #1F2833, #1E4046);
+  font-family: 'Roboto', sans-serif;
+}
+
+group:hover {
+background: linear-gradient(65deg, #9A705C , #21474D);}
+div.href:hover {
+background: linear-gradient(65deg, #9A705C , #21474D);}
+.wrapper {
+font: 13px/50px
+overflow: hidden;
+margin: auto;
+
+}
+.header {
+position: fixed;
+left: 18em;
+bottom: 18em;
+font-size: 31px;
+font-weight:bold;
+  color: #FDDCCB;
+}
+.data{
+position: fixed;
+left: 18em;
+bottom: 25em;
+font-size: 16px;
+font-weight:bold;
+  color: #1C4D4E;
+}
+.group1{
+position: fixed;
+left: 18em;
+bottom: 30em;
+
+}
+.group{
+position: fixed;
+left: 35em;
+bottom: 20em;
+}
+.button {
+color: #C5C6C7;
+background-color: #1F2833;
+  border: 2px solid #C5C6C7;
+  padding: 7px 15px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.text{
+color : C5C6C7;
+font-size: 20px;
+position: fixed;
+left: 28em;
+bottom: 22em;
+}
+.href{
+margin-right: 5px;
+float: left;
+background-color: #1F2833;
+  border: 2px solid #C5C6C7;
+  padding: 15px 40px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+.logout{
+position: fixed;
+left: 22.5em;
+bottom: 15em;
+background-color: #1F2833;
+  border: 2px solid #C5C6C7;
+  padding: 15px 40px;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   }
+.href a { color: C5C6C7;
+}

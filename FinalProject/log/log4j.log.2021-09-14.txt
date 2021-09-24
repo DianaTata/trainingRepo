@@ -1,0 +1,73 @@
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:    67 - findUserById started
+2021-09-14 19:25 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 19:25 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 19:25 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 19:25 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:    87 - UserDAO findUserById finished
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:    67 - findUserById started
+2021-09-14 19:25 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 19:25 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 19:25 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 19:25 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:    87 - UserDAO findUserById finished
+2021-09-14 19:25 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:   173 - getUsersNumber starts
+2021-09-14 19:25 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 19:25 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 19:25 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 19:25 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:   121 - UsersDao getUsers started
+2021-09-14 19:25 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 19:25 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 19:25 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 19:25 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 19:25 [DEBUG]               UserDaoImpl:   142 - UsersDAO getUsers finished
+2021-09-14 19:25 [DEBUG]              UsersServlet:    53 - Forward to users
+2021-09-14 20:52 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-14 20:52 [DEBUG]               UserDaoImpl:    94 - findUserByEmail started
+2021-09-14 20:52 [ WARN]                 DBManager:    35 - Creating new instance db
+2021-09-14 20:52 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:52 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:52 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:52 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:52 [DEBUG]               UserDaoImpl:   114 - UserDAO findUserByEmail finished
+2021-09-14 20:52 [ INFO]          LoginUserServlet:    48 - Login to /FinalProject/account
+2021-09-14 20:52 [ INFO]          LoginUserServlet:    49 - Login#doPost Finished
+2021-09-14 20:52 [DEBUG]               UserDaoImpl:    67 - findUserById started
+2021-09-14 20:52 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:52 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:52 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:52 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:52 [DEBUG]               UserDaoImpl:    87 - UserDAO findUserById finished
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:    67 - findUserById started
+2021-09-14 20:53 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:53 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:53 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:53 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:    87 - UserDAO findUserById finished
+2021-09-14 20:53 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:   173 - getUsersNumber starts
+2021-09-14 20:53 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:53 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:53 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:53 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:   121 - UsersDao getUsers started
+2021-09-14 20:53 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:53 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:53 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:53 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:   142 - UsersDAO getUsers finished
+2021-09-14 20:53 [DEBUG]              UsersServlet:    53 - Forward to users
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:    67 - findUserById started
+2021-09-14 20:53 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:53 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:53 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:53 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:    87 - UserDAO findUserById finished
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:    67 - findUserById started
+2021-09-14 20:53 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-14 20:53 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-14 20:53 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-14 20:53 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-14 20:53 [DEBUG]               UserDaoImpl:    87 - UserDAO findUserById finished
+2021-09-14 20:53 [DEBUG]             LogoutServlet:    20 - Forward logout

@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html, body {
+  background: linear-gradient(45deg, #1F2833, #1E4046);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.first{
+font-family: 'Impact', fantasy;
+font-size: 35px;
+background:  #CBFDE3;
+color: #17141B;
+position: fixed;
+    left: 16em;
+    bottom: 13em;
+    width: 27%;
+    height: 25%;
+    text-align: center;
+     padding: 48px 2px 15px;
+   border-radius: 5px;
+}
+
+.first2{
+  text-align: center;
+font-size: 20px;
+background: linear-gradient(1deg, #FDC2A5, #CBFDE3 );
+color: #17141B;
+position: fixed;
+    right: 8.05em;
+   bottom: 8em;
+       width: 17%;
+       height: 49%;
+     padding: 48px 2px 15px;
+   border-radius: 5px;
+}
+.first4{
+font-family: 'Impact', fantasy;
+font-size: 35px;
+background:  #CBFDE3;
+color: #17141B;
+position: fixed;
+    right: 4.6em;
+    bottom: 14.18em;
+    width: 17%;
+    height: 20%;
+    text-align: center;
+     padding: 48px 2px 15px;
+   border-radius: 5px;
+}
+.first3{
+font-size: 20px;
+background: linear-gradient(1deg, #FDC2A5, #CBFDE3 );
+color: #17141B;
+position: fixed;
+    right: 28em;
+    bottom: 8em;
+    width: 17%;
+    height: 49%;
+    text-align: center;
+     padding: 48px 2px 15px;
+   border-radius: 5px;
+}
+.first5{
+font-family: 'Impact', fantasy;
+font-size: 35px;
+background:  #CBFDE3;
+color: #17141B;
+position: fixed;
+    right: 16em;
+    bottom: 14.18em;
+    width: 17%;
+    height: 20%;
+    text-align: center;
+     padding: 48px 2px 15px;
+   border-radius: 5px;
+}
+.first1{
+font-size: 20px;
+background: linear-gradient(1deg, #FDC2A5, #CBFDE3 );
+color: #17141B;
+position: fixed;
+    left: 28em;
+     bottom: 15.6em;
+        width: 27%;
+        height: 25%;
+        text-align: justify;
+            word-spacing: 10px;
+            padding: 50px 30px 40px;
+      border-radius: 5px;
+}
+
+.second{
+font-family: 'Impact', fantasy;
+font-size: 35px;
+background: #CBFDE3;
+color: #17141B;
+position: fixed;
+    left: 2em;
+    bottom: 13em;
+    width: 27%;
+    height: 25%;
+    text-align: center;
+     padding: 45px 2px 15px;
+         border-radius: 5px;
+}
+.second1{
+
+font-size: 20px;
+background: linear-gradient(1deg, #FDC2A5, #CBFDE3 );
+color: #17141B;
+position: fixed;
+    left: 3.51em;
+    bottom: 7.5em;
+    width: 27%;
+    height: 45%;
+    text-align: justify;
+    word-spacing: 10px;
+    padding: 50px 30px 40px;
+         border-radius: 5px;
+}
+
+.third{
+font-family: 'Impact', fantasy;
+font-size: 35px;
+background: #CBFDE3 ;
+color: #17141B;
+position: fixed;
+    right: 2em;
+    bottom: 13em;
+    width: 27%;
+    height: 25%;
+    text-align: center;
+     padding: 35px 2px 15px;
+   border-radius: 5px;
+}
+.third1{
+font-size: 20px;
+background: linear-gradient(180deg,#CBFDE3,  #FDC2A5 );
+color: #1F2833;
+position: fixed;
+    right: 3.5em;
+    bottom: 7.5em;
+    width: 27%;
+    height: 45%;
+    text-align: justify;
+        word-spacing: 10px;
+        padding: 50px 30px 40px;
+   border-radius: 5px;
+}

@@ -1,0 +1,111 @@
+
+SET NAMES utf8;
+drop database if exists finalProject;
+create database finalProject CHARACTER SET utf8 COLLATE utf8_bin;
+use finalProject;
+
+create table user_statuses(
+id INTEGER NOT NULL PRIMARY KEY,
+name VARCHAR(20) NOT NULL UNIQUE DEFAULT 'unlocked'
+);
+CREATE TABLE roles(
+id INTEGER NOT NULL PRIMARY KEY,
+name VARCHAR(15) NOT NULL UNIQUE DEFAULT 'client'
+);
+create table users(
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(25) NOT NULL,
+surname VARCHAR(25) NOT NULL,
+email VARCHAR(50) NOT NULL UNIQUE,
+password VARCHAR(240) NOT NULL,
+encrypt VARCHAR(240) NOT NULL,
+role varchar(50) NOT NULL DEFAULT 'client',
+statusName VARCHAR (20) NOT NULL DEFAULT 'unlocked',
+FOREIGN KEY (statusName) REFERENCES user_statuses(name),
+FOREIGN KEY (role) REFERENCES roles(name) ON DELETE CASCADE ON UPDATE CASCADE
+);
+create table cards(
+id INT PRIMARY KEY AUTO_INCREMENT,
+cardNumber varchar(100) NOT NULL UNIQUE,
+cvv INT(5) NOT NULL,
+expiredDate DATE NOT NULL,
+amount decimal NOT NULL,
+userId INT(100) NOT NULL,
+FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+create table count_statuses(
+id INTEGER NOT NULL PRIMARY KEY,
+name VARCHAR(20) NOT NULL UNIQUE DEFAULT 'opened'
+);
+create table counts(
+id INT PRIMARY KEY AUTO_INCREMENT,
+countNumber INT(20) NOT NULL UNIQUE,
+countName varchar(50) NOT NULL UNIQUE,
+amount decimal NOT NULL DEFAULT "0",
+userId INT(100) NOT NULL,
+cardId INT(100) NOT NULL,
+statusName VARCHAR (20) NOT NULL DEFAULT "opened",
+FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (cardId) REFERENCES cards(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (statusName) REFERENCES count_statuses(name)
+);
+create table payment_statuses(
+id INTEGER NOT NULL PRIMARY KEY,
+name VARCHAR(20) NOT NULL UNIQUE DEFAULT "prepared"
+);
+create table payments(
+id INT PRIMARY KEY AUTO_INCREMENT,
+paymentNumber INT(20) NOT NULL UNIQUE,
+userId INT(100) NOT NULL,
+paymentDate DATE NOT NULL,
+amount decimal NOT NULL,
+statusName VARCHAR (20) NOT NULL DEFAULT "prepared",
+fromCount INT(20),
+toCount INT(20),
+FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (fromCount) REFERENCES counts(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (toCount) REFERENCES counts(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (statusName) REFERENCES payment_statuses(name)
+);
+create table request_statuses(
+id INTEGER NOT NULL PRIMARY KEY,
+name VARCHAR(20) NOT NULL UNIQUE DEFAULT "inProgress"
+);
+create table requests(
+id INT PRIMARY KEY AUTO_INCREMENT,
+requestNumber INT(20) NOT NULL UNIQUE,
+userId INT(100) NOT NULL,
+requestDate DATE NOT NULL,
+statusName VARCHAR (20) NOT NULL DEFAULT "inProgress",
+countId INT(20) NOT NULL,
+FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (statusName) REFERENCES request_statuses(name),
+FOREIGN KEY (countId) REFERENCES counts(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+insert into user_statuses values (1, "unlocked");
+insert into user_statuses values (2, "locked");
+
+insert into roles values (1, "admin");
+insert into roles values (2, "client");
+
+insert into count_statuses values (1, "opened");
+insert into count_statuses values (3, "blocked");
+
+insert into payment_statuses values (1, "prepared");
+insert into payment_statuses values (2, "sent");
+
+insert into request_statuses values (1, "inProgress");
+insert into request_statuses values (2, "done");
+
+insert into users values ( 20,'test', 'test', 'test@test.com', '123456' , '123456', default, default);
+
+insert into cards values ( 58,'111111111111', '111', '2022-02-02', '123456' , '20');
+
+
+insert into counts values ( 38,'1111', 'test', '10000', '20' , '58', default);
+insert into counts values ( 39,'2222', 'test2', '10000', '20' , '58', default);
+
+insert into payments values ( 16,'111111', '20', '2021-02-02', '20000', default, 38, 39);
+
+
+insert into requests values ( 16,'1111', '20', '2020-02-02', default, 38 );

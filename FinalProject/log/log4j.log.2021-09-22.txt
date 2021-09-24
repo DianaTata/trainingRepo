@@ -1,0 +1,1856 @@
+2021-09-22 10:17 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 10:17 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 10:17 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 10:17 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 10:17 [ WARN]                 DBManager:    41 - Creating new instance db
+2021-09-22 10:17 [ERROR]                 DBManager:    68 - Cant properly getConnection
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:50)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:90)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:330)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:847)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:158)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:835)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:172)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getMysqlDataSource(DBManager.java:50)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.isDataSourcePresent(DBManager.java:79)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getConnection(DBManager.java:66)
+	at com.epam.rd.java.basic.finalProject.dao.impl.UserDaoImpl.findUserByEmail(UserDaoImpl.java:103)
+	at com.epam.rd.java.basic.finalProject.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:48)
+	at com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet.doPost(LoginUserServlet.java:41)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.AuthorizationFilter.doFilter(AuthorizationFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.LocalizationFilter.doFilter(LocalizationFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.CharsetFilter.doFilter(CharsetFilter.java:25)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.UserStatusFilter.doFilter(UserStatusFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:285)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:47)
+	... 42 more
+2021-09-22 10:17 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 10:22 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 10:22 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 10:22 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 10:22 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 10:22 [ WARN]                 DBManager:    41 - Creating new instance db
+2021-09-22 10:32 [ERROR]                 DBManager:    68 - Cant properly getConnection
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:50)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:90)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:330)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:847)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:158)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:835)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:172)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getMysqlDataSource(DBManager.java:50)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.isDataSourcePresent(DBManager.java:79)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getConnection(DBManager.java:66)
+	at com.epam.rd.java.basic.finalProject.dao.impl.UserDaoImpl.findUserByEmail(UserDaoImpl.java:103)
+	at com.epam.rd.java.basic.finalProject.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:48)
+	at com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet.doPost(LoginUserServlet.java:41)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.AuthorizationFilter.doFilter(AuthorizationFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.LocalizationFilter.doFilter(LocalizationFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.CharsetFilter.doFilter(CharsetFilter.java:25)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.UserStatusFilter.doFilter(UserStatusFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:285)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:47)
+	... 42 more
+2021-09-22 10:32 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 10:41 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 10:41 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 10:41 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 10:41 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 10:41 [ WARN]                 DBManager:    41 - Creating new instance db
+2021-09-22 10:41 [ERROR]                 DBManager:    68 - Cant properly getConnection
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:50)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:90)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:330)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:847)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:158)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:835)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:172)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getMysqlDataSource(DBManager.java:50)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.isDataSourcePresent(DBManager.java:79)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getConnection(DBManager.java:66)
+	at com.epam.rd.java.basic.finalProject.dao.impl.UserDaoImpl.findUserByEmail(UserDaoImpl.java:103)
+	at com.epam.rd.java.basic.finalProject.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:48)
+	at com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet.doPost(LoginUserServlet.java:41)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.AuthorizationFilter.doFilter(AuthorizationFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.LocalizationFilter.doFilter(LocalizationFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.CharsetFilter.doFilter(CharsetFilter.java:25)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.UserStatusFilter.doFilter(UserStatusFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:285)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:47)
+	... 42 more
+2021-09-22 10:41 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 10:48 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 10:48 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 10:48 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 10:48 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 10:48 [ WARN]                 DBManager:    41 - Creating new instance db
+2021-09-22 10:48 [ERROR]                 DBManager:    68 - Cant properly getConnection
+javax.naming.NamingException: Could not create resource factory instance [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory]
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:50)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:90)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:330)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:847)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:158)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:835)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:172)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getMysqlDataSource(DBManager.java:50)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.isDataSourcePresent(DBManager.java:79)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getConnection(DBManager.java:66)
+	at com.epam.rd.java.basic.finalProject.dao.impl.UserDaoImpl.findUserByEmail(UserDaoImpl.java:103)
+	at com.epam.rd.java.basic.finalProject.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:48)
+	at com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet.doPost(LoginUserServlet.java:41)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.AuthorizationFilter.doFilter(AuthorizationFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.LocalizationFilter.doFilter(LocalizationFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.CharsetFilter.doFilter(CharsetFilter.java:25)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.UserStatusFilter.doFilter(UserStatusFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:285)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:315)
+	at org.apache.naming.factory.ResourceFactory.getDefaultFactory(ResourceFactory.java:47)
+	... 42 more
+2021-09-22 10:48 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 10:51 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 10:51 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 10:51 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 10:51 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 10:51 [ WARN]                 DBManager:    41 - Creating new instance db
+2021-09-22 10:51 [ERROR]                 DBManager:    68 - Cant properly getConnection
+javax.naming.NamingException: Could not load resource factory class [Root exception is java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory]
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:66)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:330)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:847)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:158)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:835)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:172)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getMysqlDataSource(DBManager.java:50)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.isDataSourcePresent(DBManager.java:79)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getConnection(DBManager.java:66)
+	at com.epam.rd.java.basic.finalProject.dao.impl.UserDaoImpl.findUserByEmail(UserDaoImpl.java:103)
+	at com.epam.rd.java.basic.finalProject.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:48)
+	at com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet.doPost(LoginUserServlet.java:41)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.AuthorizationFilter.doFilter(AuthorizationFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.LocalizationFilter.doFilter(LocalizationFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.CharsetFilter.doFilter(CharsetFilter.java:25)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.UserStatusFilter.doFilter(UserStatusFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:285)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1333)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:61)
+	... 41 more
+2021-09-22 10:51 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 10:54 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 10:54 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 10:54 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 10:54 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 10:54 [ WARN]                 DBManager:    41 - Creating new instance db
+2021-09-22 10:54 [ERROR]                 DBManager:    68 - Cant properly getConnection
+java.sql.SQLException: Cannot load JDBC driver class 'com.mysql.cj.jdbc.Driver'
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:2138)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createDataSource(BasicDataSource.java:2032)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1532)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.isDataSourcePresent(DBManager.java:79)
+	at com.epam.rd.java.basic.finalProject.db.DBManager.getConnection(DBManager.java:66)
+	at com.epam.rd.java.basic.finalProject.dao.impl.UserDaoImpl.findUserByEmail(UserDaoImpl.java:103)
+	at com.epam.rd.java.basic.finalProject.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:48)
+	at com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet.doPost(LoginUserServlet.java:41)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.AuthorizationFilter.doFilter(AuthorizationFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.LocalizationFilter.doFilter(LocalizationFilter.java:26)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.CharsetFilter.doFilter(CharsetFilter.java:25)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.epam.rd.java.basic.finalProject.filter.UserStatusFilter.doFilter(UserStatusFilter.java:43)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:285)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1333)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at org.apache.tomcat.dbcp.dbcp2.BasicDataSource.createConnectionFactory(BasicDataSource.java:2129)
+	... 37 more
+2021-09-22 10:54 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 11:00 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 11:00 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 11:00 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 11:00 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 11:00 [ WARN]                 DBManager:    35 - Creating new instance db
+2021-09-22 11:00 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-22 11:00 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:00 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-22 11:00 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-22 11:00 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-22 11:00 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 11:00 [ WARN]           UserServiceImpl:    49 - started getUserByEmail
+2021-09-22 11:00 [ INFO]          LoginUserServlet:    48 - Login to /FinalProject/account
+2021-09-22 11:00 [ INFO]          LoginUserServlet:    49 - Login#doPost Finished
+2021-09-22 11:00 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:00 [ WARN]                 DBManager:    44 - Set DataSource properties
+2021-09-22 11:00 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:00 [ WARN]                 DBManager:    89 - Closing Connection
+2021-09-22 11:00 [ WARN]                 DBManager:    78 - Closing Statement
+2021-09-22 11:00 [ WARN]                 DBManager:    67 - Closing ResultSet
+2021-09-22 11:00 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:00 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:00 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:00 [ INFO]            AccountServlet:    20 - go to account.jsp
+2021-09-22 11:03 [ WARN]          UserStatusFilter:    45 - UserStatusFilter go to login
+2021-09-22 11:03 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 11:03 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 11:03 [ WARN]                 DBManager:    38 - Creating new instance db
+2021-09-22 11:03 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:03 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:03 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:03 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:03 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 11:03 [ WARN]           UserServiceImpl:    49 - started getUserByEmail
+2021-09-22 11:03 [ INFO]          LoginUserServlet:    48 - Login to /FinalProject/account
+2021-09-22 11:03 [ INFO]          LoginUserServlet:    49 - Login#doPost Finished
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:03 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:03 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:03 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:03 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:03 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:03 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:03 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:03 [ INFO]            AccountServlet:    20 - go to account.jsp
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:03 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:03 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:03 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:03 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:03 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:03 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:03 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:03 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:03 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:03 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:03 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:03 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:03 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:03 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:03 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:03 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:03 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:03 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:03 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:03 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:03 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:04 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:04 [ WARN]    UserVerificationFilter:    22 - started UserVerificationFilter
+2021-09-22 11:04 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:04 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:04 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:04 [ WARN]        PaymentServiceImpl:    83 - started get user payments
+2021-09-22 11:04 [DEBUG]            PaymentDaoImpl:   226 - getUserPaymentsNumber starts
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [ WARN]        PaymentServiceImpl:    58 - started getUserPayments
+2021-09-22 11:04 [DEBUG]            PaymentDaoImpl:   150 - PaymentDao getUserPayments started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]            PaymentDaoImpl:   174 - PaymentDAO getUserPayments finished
+2021-09-22 11:04 [DEBUG]           PaymentsServlet:    59 - Forward to user payments
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:04 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:04 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:04 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:04 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:04 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:04 [ WARN]    UserVerificationFilter:    22 - started UserVerificationFilter
+2021-09-22 11:04 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:04 [ WARN]          CountServiceImpl:   108 - started get user counts
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   138 - Get User Counts Number starts
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [ WARN]          CountServiceImpl:    71 - started getUserCounts
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   329 - CountDao getUserCounts started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:04 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:04 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:04 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:04 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:04 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:04 [DEBUG]              CountDaoImpl:   353 - CountDAO getUserCounts finished
+2021-09-22 11:04 [DEBUG]             CountsServlet:    59 - Forward to user counts
+2021-09-22 11:12 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:12 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:12 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:12 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:12 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:12 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:12 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:12 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:12 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:12 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:12 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:12 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    73 - Can't performUserNameAndSurname
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:   174 - updateUserNameAndSurname starts
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ INFO]     UpdateUserInfoServlet:    39 - Redirecting to /FinalProject/myAccount
+2021-09-22 11:17 [ INFO]     UpdateUserInfoServlet:    40 - updateUser User#doPost Finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]    UserVerificationFilter:    22 - started UserVerificationFilter
+2021-09-22 11:17 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:17 [ WARN]          CountServiceImpl:   108 - started get user counts
+2021-09-22 11:17 [DEBUG]              CountDaoImpl:   138 - Get User Counts Number starts
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [ WARN]          CountServiceImpl:    71 - started getUserCounts
+2021-09-22 11:17 [DEBUG]              CountDaoImpl:   329 - CountDao getUserCounts started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]              CountDaoImpl:   353 - CountDAO getUserCounts finished
+2021-09-22 11:17 [DEBUG]             CountsServlet:    59 - Forward to user counts
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:17 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:17 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:17 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:17 [ WARN]    UserVerificationFilter:    22 - started UserVerificationFilter
+2021-09-22 11:17 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:17 [ WARN]          CountServiceImpl:   108 - started get user counts
+2021-09-22 11:17 [DEBUG]              CountDaoImpl:   138 - Get User Counts Number starts
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [ WARN]          CountServiceImpl:    71 - started getUserCounts
+2021-09-22 11:17 [DEBUG]              CountDaoImpl:   329 - CountDao getUserCounts started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:17 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:17 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:17 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:17 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:17 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:17 [DEBUG]              CountDaoImpl:   353 - CountDAO getUserCounts finished
+2021-09-22 11:17 [DEBUG]             CountsServlet:    59 - Forward to user counts
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:18 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:18 [ WARN]    CardVerificationFilter:    28 - started CardVerificationFilter
+2021-09-22 11:18 [ERROR]           CardServiceImpl:    46 - started getCardById
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:18 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:18 [ WARN]          CountServiceImpl:    35 - started getCountByCardId
+2021-09-22 11:18 [DEBUG]              CountDaoImpl:   184 - CountDao find Count By Card Id started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]              CountDaoImpl:   204 - CountDAO find Count By Card finished
+2021-09-22 11:18 [DEBUG]              CountServlet:    36 - Forward count
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:18 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:18 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:18 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:18 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:18 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:18 [ WARN]    UserVerificationFilter:    22 - started UserVerificationFilter
+2021-09-22 11:18 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:18 [ WARN]          CountServiceImpl:   108 - started get user counts
+2021-09-22 11:18 [DEBUG]              CountDaoImpl:   138 - Get User Counts Number starts
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [ WARN]          CountServiceImpl:    71 - started getUserCounts
+2021-09-22 11:18 [DEBUG]              CountDaoImpl:   329 - CountDao getUserCounts started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:18 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:18 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:18 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:18 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:18 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:18 [DEBUG]              CountDaoImpl:   353 - CountDAO getUserCounts finished
+2021-09-22 11:18 [DEBUG]             CountsServlet:    59 - Forward to user counts
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:24 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:24 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:24 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:24 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:24 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:24 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:24 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:24 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:24 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:24 [ INFO]          MyAccountServlet:    20 - go to myAccount.jsp
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:24 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:24 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:24 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:24 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:24 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:24 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:24 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:24 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:24 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:24 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:24 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:24 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:24 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:24 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:24 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:24 [ WARN]       AuthorizationFilter:    51 - AuthorizationFilter chain not userServlets
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:24 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:24 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:24 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:24 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:24 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:24 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:24 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:24 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:24 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:24 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:24 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:24 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:24 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:24 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:24 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:24 [DEBUG]             LogoutServlet:    20 - Forward logout
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    49 - started getUserByEmail
+2021-09-22 11:25 [ INFO]          LoginUserServlet:    57 - Error login
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 11:25 [DEBUG]          LoginUserServlet:    36 - Forward login
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    42 - UserStatusFilter chain NULL
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    95 - findUserByEmail started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:   115 - UserDAO findUserByEmail finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    49 - started getUserByEmail
+2021-09-22 11:25 [ INFO]          LoginUserServlet:    48 - Login to /FinalProject/account
+2021-09-22 11:25 [ INFO]          LoginUserServlet:    49 - Login#doPost Finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [ INFO]            AccountServlet:    20 - go to account.jsp
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:25 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:25 [ WARN]        RequestServiceImpl:    67 - started get user requests
+2021-09-22 11:25 [DEBUG]            RequestDaoImpl:   137 - getUserRequestsNumber starts
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]            RequestDaoImpl:   109 - RequestsDao getRequests started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]            RequestDaoImpl:   130 - RequestsDAO getRequests finished
+2021-09-22 11:25 [ WARN]        RequestServiceImpl:    53 - started getRequests
+2021-09-22 11:25 [DEBUG]           RequestsServlet:    52 - Forward to requests
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:25 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:25 [ WARN]        RequestServiceImpl:    67 - started get user requests
+2021-09-22 11:25 [DEBUG]            RequestDaoImpl:   137 - getUserRequestsNumber starts
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]            RequestDaoImpl:   109 - RequestsDao getRequests started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   302 - CountDao findCountById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   100 - CardDao findCardById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               CardDaoImpl:   119 - CardDAO findCardById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]              CountDaoImpl:   322 - CountDao findCountById finished
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]            RequestDaoImpl:   130 - RequestsDAO getRequests finished
+2021-09-22 11:25 [ WARN]        RequestServiceImpl:    53 - started getRequests
+2021-09-22 11:25 [DEBUG]  FulfilledRequestsServlet:    53 - Forward to done requests
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [ WARN]       AuthorizationFilter:    38 - AuthorizationFilter no commonServlets
+2021-09-22 11:25 [DEBUG]          PaginationMapper:    34 - Cant creation pagination
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    79 - started get users count
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:   199 - getUsersNumber starts
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:   122 - UsersDao getUsers started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:   143 - UsersDAO getUsers finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    59 - started get users
+2021-09-22 11:25 [DEBUG]              UsersServlet:    53 - Forward to users
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    68 - findUserById started
+2021-09-22 11:25 [ WARN]                 DBManager:    47 - Set DataSource properties
+2021-09-22 11:25 [ INFO]               UserDaoImpl:   232 - UserDaoImpl fill user success
+2021-09-22 11:25 [ WARN]                 DBManager:    96 - Closing Connection
+2021-09-22 11:25 [ WARN]                 DBManager:    85 - Closing Statement
+2021-09-22 11:25 [ WARN]                 DBManager:    74 - Closing ResultSet
+2021-09-22 11:25 [DEBUG]               UserDaoImpl:    88 - UserDAO findUserById finished
+2021-09-22 11:25 [ WARN]           UserServiceImpl:    32 - started getUserById
+2021-09-22 11:25 [ WARN]          UserStatusFilter:    38 - UserStatusFilter chain UNLOCKED
+2021-09-22 11:25 [DEBUG]             LogoutServlet:    20 - Forward logout

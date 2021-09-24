@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html, body {
+  background: linear-gradient(45deg, #1F2833, #1E4046);
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+font: 13px/50px
+background: #ecedef;
+overflow: hidden;
+background-color:  #C5C6C7;
+margin: auto;
+
+}
+.header {
+position: absolute;
+top: 10px;
+  left: 37px;
+font-size: 25px;
+font-weight:bold;
+  color: #FDDCCB;
+}
+
+.group1{
+
+position: fixed;
+left: 2em;
+bottom: 40em;
+    background:  #C5C6C7;
+    border-top: 1px solid  #C5C6C7;
+}
+.href3{
+  background: #FDDCCB ;
+    background-blend-mode: multiply;
+    transition: 1s linear;
+  color: #6EAD9D;
+  position: fixed;
+     left: 41em;
+         bottom: 7em;
+         width: 14%;
+         height: 6%;
+      text-align: left;
+      text-align: center;
+       padding: 8px 2px 15px;
+        border-radius: 40px;
+        font-size: 1em;
+        cursor: pointer;
+
+}
+.href2{
+background: #FDDCCB;
+position: fixed;
+    left: 41em;
+    bottom: 11em;
+    width: 14%;
+        height: 6%;;
+    text-align: center;
+     padding: 8px 10px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.href1{
+background: #FDDCCB  ;
+  background-blend-mode: multiply;
+  transition: 1s linear;
+color: #6EAD9D;
+position: fixed;
+    left: 41em;
+    bottom: 3em;
+    width: 14%;
+    height: 6%;
+    text-align: center;
+     padding: 8px 10px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.href4{
+background: #FDDCCB;
+  background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    left: 2em;
+    bottom: 33em;
+    width: 14%;
+        height: 6%;
+    text-align: center;
+     padding: 8px 10px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.href5{
+background: #FDDCCB;
+  background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    left: 2em;
+    bottom: 38em;
+    width: 14%;
+        height: 6%;
+    text-align: center;
+     padding: 8px 10px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer
+
+}
+.logout{
+background: #FDDCCB;
+background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    right: 19em;
+    bottom: 45em;
+    width: 6%;
+    height: 5%;
+    text-align: center;;
+     padding: 7px 18px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+
+.logout a { color: #1F2833; }
+.href1 a { color: #1F2833;
+font-size: 23px;}
+.href2 a { color: #1F2833;
+ font-size: 23px;}
+.href3 a { color: #1F2833;
+ font-size: 23px;}
+ .href4 a { color: #1F2833;
+          font-size: 23px;}
+.href5 a { color: #1F2833;
+         font-size: 23px;}
+.href3:hover {
+  background: linear-gradient(65deg, #FDDCCB, #21474D);
+}
+.href2:hover {
+   background: linear-gradient(65deg, #F29A85,  #21474D);
+}
+.href1:hover {
+   background: linear-gradient(65deg, #FDDCCB , #21474D);
+}
+.href4:hover {
+  background: linear-gradient(65deg, #FDDCCB , #21474D);
+}
+.href5:hover {
+               background: linear-gradient(65deg, #FDDCCB , #21474D);
+             }
+.logout:hover {
+  background: linear-gradient(65deg, #FDDCCB , #21474D);
+}
+A {
+color: #C5C6C7;
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   }
+.href a { color: C5C6C7;
+}

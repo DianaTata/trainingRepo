@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html, body {
+  background: linear-gradient(45deg, #1F2833, #1E4046);
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+font: 13px/50px
+background: #ecedef;
+overflow: hidden;
+margin: auto;
+
+}
+.header {
+position: absolute;
+top: 10px;
+  left: 37px;
+font-size: 25px;
+font-weight:bold;
+  color: #FDDCCB;
+}
+
+.href{
+margin-right: 5px;
+text-decoration: none;
+float: left;
+background-color: #C5C6C7;
+  border: 2px solid #1F2833;
+  padding: 15px 40px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+
+   }
+   input {
+   background-color: #1F2833;
+   color: C5C6C7;
+     width: 100%;
+     padding: 5px;
+     height: 40px;
+     border-radius: 12px;
+     margin: 5px 0;
+     outline: none;
+   }
+   .data{
+   width: 20%;
+   height: 24%;
+   color: #1F2833;
+   border-radius: 5px;
+   background: linear-gradient(1deg, #FDC2A5, #CBFDE3 );
+   padding: 20px 40px;
+   position: fixed;
+   left: 8em;
+   bottom: 26.5em;
+   font-size: 18px;
+   font-weight:bold;
+   }
+.button {
+      background: #FDDCCB;
+        background-blend-mode: multiply;
+        transition: 0.7s linear;
+      color: #1F2833;
+          width: 35%;
+              height: 2%;
+          text-align: center;
+           padding: 9px 10px 10px;
+            border-radius: 40px;
+            font-size: 0.8em;
+            cursor: pointer
+
+      }
+   .href4{
+   background: #FDDCCB;
+     background-blend-mode: multiply;
+     transition: 0.7s linear;
+   color: #6EAD9D;
+   position: fixed;
+       left: 9.7em;
+       bottom: 11.02em;
+       width: 14%;
+           height: 6%;
+       text-align: center;
+        padding: 9px 10px 15px;
+         border-radius: 40px;
+         font-size: 1em;
+         cursor: pointer
+
+   }
+.modal-content{
+background: #FDDCCB;}
+
+.myButton{
+background: #FDDCCB;
+background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #1F2833;
+position: fixed;
+    left: 8.5em;
+    bottom: 23.5em;
+    width: 14%;
+    height: 6%;
+    text-align: center;;
+     padding: 9px 18px 15px;
+      border-radius: 40px;
+      font-size: 18px;
+      cursor: pointer;
+}
+.href1{
+background: #FDDCCB;
+background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    left: 20em;
+    bottom: 45em;
+    width: 10%;
+    height: 5%;
+    text-align: center;;
+     padding: 9px 18px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.href2{
+background: #FDDCCB;
+background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    left: 30em;
+    bottom: 45em;
+    width: 10%;
+    height: 5%;
+    text-align: center;;
+     padding: 9px 18px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.href3{
+background: #FDDCCB;
+background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    left: 10em;
+    bottom: 45em;
+    width: 10%;
+    height: 5%;
+    text-align: center;;
+     padding: 9px 18px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.logout{
+background: #FDDCCB;
+background-blend-mode: multiply;
+  transition: 0.7s linear;
+color: #6EAD9D;
+position: fixed;
+    right: 20.8em;
+    bottom: 45em;
+    width: 6%;
+    height: 5%;
+    text-align: center;;
+     padding: 6px 18px 15px;
+      border-radius: 40px;
+      font-size: 1em;
+      cursor: pointer;
+}
+.href1 a { color: #1F2833;
+font-size: 16px;}
+.href2 a { color: #1F2833;
+ font-size: 16px;}
+.href3 a { color: #1F2833;
+ font-size: 16px;}
+ .href4 a { color: #1F2833;
+  font-size: 20px;}
+  .logout a { color: #1F2833 }
+  .href3:hover {
+    background: linear-gradient(65deg, #F29A85 , #21474D);
+  }
+  .href2:hover {
+     background: linear-gradient(65deg, #F29A85,  #21474D);
+  }
+  .href1:hover {
+     background: linear-gradient(65deg, #F29A85 , #21474D);
+  }
+  .href4:hover {
+    background: linear-gradient(65deg, #F29A85 , #21474D);
+  }
+   .myButton:hover {
+      background: linear-gradient(65deg, #F29A85 , #21474D);
+    }
+
+  .logout:hover {
+    background: linear-gradient(65deg, #F29A85, #21474D);
+  }
+
+
+
+
+

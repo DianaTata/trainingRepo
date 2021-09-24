@@ -1,0 +1,26 @@
+<%--===========================================================================
+JSTL core tag library.
+===========================================================================--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%--===========================================================================
+JSTL functions tag library.
+===========================================================================--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+<%--===========================================================================
+JSTL i18n tag library.
+===========================================================================--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+
+<%--===========================================================================
+Own tag
+===========================================================================--%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="localization" %>
+<fmt:setLocale value="${sessionScope.locale.language}" />
+<%@ taglib uri="/WEB-INF/tld/dateTag.tld" prefix="date"%>
+<%@ include file="/jspf/footer.jspf" %>
+<style>
+<%@include file="/css/footer.css"%>
+</style>
+
