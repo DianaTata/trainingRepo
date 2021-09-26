@@ -75,6 +75,8 @@
 <c:when test="${payment.statusName.name == 'prepared'}">
 <td><form name="approvePayment" action="approvePayment"  method="POST">
     <input type="hidden" name="paymentId" value="${payment.id}">
+    <input type="hidden" name="toCount" value="${payment.toCount.id}">
+    <input type="hidden" name="fromCount" value="${payment.fromCount.id}">
     <button class="but" type="submit" ><fmt:message key="approve"/> </button>
     </form>
 </td>

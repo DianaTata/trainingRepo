@@ -98,8 +98,8 @@ com/epam/rd/java/basic/finalProject/dao/impl/RequestDaoImpl.java
  com.epam.rd.java.basic.finalProject.dao.impl.RequestDaoImpl
 com/epam/rd/java/basic/finalProject/filter/UserStatusFilter.java
  com.epam.rd.java.basic.finalProject.filter.UserStatusFilter
-com/epam/rd/java/basic/finalProject/servlet/PaymentApproveServlet.java
- com.epam.rd.java.basic.finalProject.servlet.PaymentApproveServlet
+com/epam/rd/java/basic/finalProject/service/impl/PaymentServiceImpl.java
+ com.epam.rd.java.basic.finalProject.service.impl.PaymentServiceImpl
 com/epam/rd/java/basic/finalProject/servlet/SendPdfServlet.java
  com.epam.rd.java.basic.finalProject.servlet.SendPdfServlet
 com/epam/rd/java/basic/finalProject/listener/ContextListener.java
@@ -120,8 +120,8 @@ com/epam/rd/java/basic/finalProject/service/CardService.java
  com.epam.rd.java.basic.finalProject.service.CardService
 com/epam/rd/java/basic/finalProject/servlet/RequestsServlet.java
  com.epam.rd.java.basic.finalProject.servlet.RequestsServlet
-com/epam/rd/java/basic/finalProject/servlet/PaymentDeclineServlet.java
- com.epam.rd.java.basic.finalProject.servlet.PaymentDeclineServlet
+com/epam/rd/java/basic/finalProject/servlet/LoginUserServlet.java
+ com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet
 com/epam/rd/java/basic/finalProject/dao/impl/CardDaoImpl.java
  com.epam.rd.java.basic.finalProject.dao.impl.CardDaoImpl
 com/epam/rd/java/basic/finalProject/dao/impl/CountDaoImpl.java
@@ -181,7 +181,7 @@ com/epam/rd/java/basic/finalProject/servlet/WithdrawServlet.java
  com.epam.rd.java.basic.finalProject.servlet.WithdrawServlet
 com/epam/rd/java/basic/finalProject/servlet/RegistrationUserServlet.java
  com.epam.rd.java.basic.finalProject.servlet.RegistrationUserServlet
-com/epam/rd/java/basic/finalProject/service/impl/PaymentServiceImpl.java
- com.epam.rd.java.basic.finalProject.service.impl.PaymentServiceImpl
-com/epam/rd/java/basic/finalProject/servlet/LoginUserServlet.java
- com.epam.rd.java.basic.finalProject.servlet.LoginUserServlet
+com/epam/rd/java/basic/finalProject/servlet/PaymentDeclineServlet.java
+ com.epam.rd.java.basic.finalProject.servlet.PaymentDeclineServlet
+com/epam/rd/java/basic/finalProject/servlet/PaymentApproveServlet.java
+ com.epam.rd.java.basic.finalProject.servlet.PaymentApproveServlet
